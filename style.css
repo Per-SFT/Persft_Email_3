@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0px;
+}
+p {
+  margin-bottom: 0px;
+}
+
+.outer-panel {
+  width: 60%;
+  /* padding: 0 7%; */
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.persft-back {
+  width: 100%;
+  background-image: url("images/persft-banner.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: calc(70vh - 50px);
+  padding-top: 1rem;
+  /* text-align: center; */
+}
+
+.back-inner img {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.persft-dis {
+  margin-top: 1em;
+}
+.persft-dis p {
+  font-size: 1.1em;
+  color: #113649;
+  font-weight: 500;
+}
+
+.persft-sub {
+  padding-left: 2%;
+  margin-top: 1em;
+}
+
+.persft-sub p {
+  font-size: 1.1em;
+  /* font-weight: 300; */
+  color: #000;
+}
+
+.persft-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-persft {
+  background: #113649;
+  color: #fff;
+  width: max-content;
+  padding: 8px 14px;
+  font-weight: normal;
+  font-size: 1rem;
+}
+.btn-persft:hover {
+  background: #113649;
+  color: #fff;
+}
+.persft-box{
+    margin-bottom: 1em;
+}
+.persft-box p{
+    color: #113649;
+    font-weight: 500;
+}
+.persft-box span{
+    color: #000;
+}
+
+/* media  */
+@media only screen and (max-device-width: 425px) {
+  .outer-panel {
+    width: 100%;
+  }
+  .back-inner {
+    text-align: center;
+  }
+  .col-sm-12 {
+    padding: 0px;
+  }
+  .per-box {
+    margin-bottom: 1em;
+  }
+  .persft-back {
+    height: 42vh;
+  }
+}
+/* media  */
+@media only screen and (max-device-width: 920px) {
+  .outer-panel {
+    width: 100%;
+  }
+  .back-inner {
+    text-align: center;
+  }
+  .col-sm-12 {
+    padding: 0px;
+  }
+  .inner-border-2::before {
+    width: 90%;
+  }
+  .inner-border-2::after {
+    right: -5px;
+    top: 14px;
+    width: 1px;
+  }
+  .feature-inner {
+    padding: 0.5em;
+  }
+  .inner-border-1::after {
+    right: -5px;
+  }
+}
